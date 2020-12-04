@@ -4,8 +4,6 @@ open System.IO
 let config  = [(1,1);(1,3);(1,5);(1,7);(2,1)]
 let finalIndex steps stepsize listLength = steps * stepsize % listLength
 
-
-
 let day3 = 
     config 
     |> Seq.map (fun (down, right) ->  
