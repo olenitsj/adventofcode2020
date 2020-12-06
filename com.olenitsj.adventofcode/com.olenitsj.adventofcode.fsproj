@@ -15,11 +15,15 @@
     <Content Include="DayThreeInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DayFourInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="TryParser.fs" />
     <Compile Include="Day1.fs" />
     <Compile Include="Day2_1.fs" />
     <Compile Include="Day2_2.fs" />
     <Compile Include="Day3.fs" />
+    <Compile Include="Day4.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

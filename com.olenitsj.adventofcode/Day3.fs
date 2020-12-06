@@ -1,6 +1,7 @@
 ﻿module Day3
 
 open System.IO
+
 let config  = [(1,1);(1,3);(1,5);(1,7);(2,1)]
 let finalIndex steps stepsize listLength = steps * stepsize % listLength
 let input = seq { yield! File.ReadLines @"DayThreeInput.txt" }
