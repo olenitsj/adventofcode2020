@@ -5,6 +5,7 @@ open Day2_2
 open Day3
 open Day4
 open Day5
+open Day6
 
 [<EntryPoint>]
 let main argv =
@@ -13,5 +14,7 @@ let main argv =
   // printfn "Day 2_2: %A" <| day2_2
   // printfn "Day 3: %A" <| day3
   // printfn "Day 4: %A" <| day4
-   printfn "Day 5: %A" <| day5
+  // printfn "Day 5: %A" <| day5
+   printfn "Day 5: %A" <| day6
+
    0 // return an integer exit code

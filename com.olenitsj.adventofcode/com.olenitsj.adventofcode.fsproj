@@ -21,7 +21,10 @@
     <Content Include="DayVijfInput.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Compile Include="SeqUtil.fs" />
+    <Content Include="DaySixInput.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Util.fs" />
     <Compile Include="TryParser.fs" />
     <Compile Include="PassportValidation.fs" />
     <Compile Include="Day1.fs" />
@@ -30,6 +33,7 @@
     <Compile Include="Day3.fs" />
     <Compile Include="Day4.fs" />
     <Compile Include="Day5.fs" />
+    <Compile Include="Day6.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

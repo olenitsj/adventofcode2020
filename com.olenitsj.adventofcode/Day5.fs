@@ -1,7 +1,7 @@
 ﻿module Day5
 
 open System.IO
-open SeqUtil
+open Util
 open System
 
 
