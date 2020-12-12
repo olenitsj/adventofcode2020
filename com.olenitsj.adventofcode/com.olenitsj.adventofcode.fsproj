@@ -19,6 +19,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Compile Include="TryParser.fs" />
+    <Compile Include="PassportValidation.fs" />
     <Compile Include="Day1.fs" />
     <Compile Include="Day2_1.fs" />
     <Compile Include="Day2_2.fs" />
