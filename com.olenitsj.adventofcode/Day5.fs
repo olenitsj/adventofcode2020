@@ -40,11 +40,22 @@ let decodeLine encodedLine =
         let row = decode (a |> Seq.toList) rows |> List.exactlyOne
         let column = decode (b |> Seq.toList) colmuns |> List.exactlyOne
         (row, column))
-        
-let day5 = 
-    let input = seq { yield! File.ReadLines @"DayVijfInput.txt" } |> Seq.toList
+ 
+let getAllIds input = 
     input
     |> Seq.map(fun a -> 
         decodeLine a 
-        |> calculateId) 
-    |> Seq.max
+        |> calculateId)
+
+let getMissingId input = 
+    let allids = getAllIds input 
+    let wholelist = 
+        allids 
+        |> (fun t -> {Seq.min t .. Seq.max t})
+    
+    Seq.except allids wholelist
+    |> Seq.exactlyOne
+        
+let day5 = 
+    seq { yield! File.ReadLines @"DayVijfInput.txt" } 
+    |> getMissingId 

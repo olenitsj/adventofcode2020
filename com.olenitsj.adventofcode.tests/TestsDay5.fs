@@ -44,3 +44,10 @@ let ``Decode row`` () =
 let ``Decode column`` () =
     Assert.Equal<int list>([7], decode ['R'; 'R'; 'R'] [0 .. 7])
     Assert.Equal<int list>([4], decode ['R'; 'L'; 'L'] [0 .. 7])
+
+[<Fact>]
+let ``All id's`` () =
+    let input = seq {"BFFFBBFRRR";"FFFBBBFRRR";"BBFFBBFRLL"}
+    let expectedOutput = seq {567; 119; 820 }
+    Assert.Equal<int seq>(expectedOutput, getAllIds input)  
+  

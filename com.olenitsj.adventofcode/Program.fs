@@ -13,6 +13,5 @@ let main argv =
   // printfn "Day 2_2: %A" <| day2_2
   // printfn "Day 3: %A" <| day3
   // printfn "Day 4: %A" <| day4
-   let f = day5
-   printfn "Day 5: %i" <| f
+   printfn "Day 5: %A" <| day5
    0 // return an integer exit code
